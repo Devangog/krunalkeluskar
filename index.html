@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krunal Keluskar | Fitness Coach</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    line-height:1.6;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:15px 0;
+    position:fixed;
+    width:100%;
+    z-index:1000;
+}
+
+nav{
+    width:85%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:#00ff88;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00ff88;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1571019613914-85f342c55f1c');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero span{
+    color:#00ff88;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#00ff88;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.about img{
+    width:400px;
+    border-radius:50%;
+    margin-bottom:30px;
+}
+
+h3{
+    margin-top: 20px;
+}
+/* ===== SLIDER ===== */
+
+h2{
+    margin-bottom: 30px;
+}
+
+#gallery {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+.services{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background: lightskyblue;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.testimonial{
+    background:#222;
+    color:white;
+    padding:20px;
+    margin:20px auto;
+    width:60%;
+    border-radius:10px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .services{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .testimonial{
+        width:90%;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>Krunal Keluskar</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div>
+<h1>Hi, I'm <span>Krunal Keluskar</span></h1>
+<p>Certified Personal Trainer & Online Fitness Coach</p>
+<a href="#contact" class="btn">Start Your Transformation</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+<h2>About Me</h2>
+<img src="krunalkeluskar.png" >
+<p>
+I am a certified fitness coach with 7+ years of experience helping people 
+lose weight, build muscle, and transform their lifestyle. 
+My goal is to guide you step-by-step towards your dream body 
+with personalized workout and nutrition plans.
+</p>
+
+<h3>Certifications & Experience</h3>
+<p>
+✔ Certified Personal Trainer <br>
+✔ Sports Nutrition Specialist <br>
+✔ Helped 200+ clients transform
+</p>
+</section>
+
+<!-- ===== COACHING GALLERY ===== -->
+<section id="gallery">
+  <h2>Coaching Moments</h2>
+
+  <div class="slider">
+    <div class="slides">
+
+      <img src="coaching1.png" >
+      <img src="coaching2.png" >
+      <img src="coaching3.png" >
+      <img src="coaching4.png" >
+
+    </div>
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>My Coaching Services</h2>
+<div class="services">
+
+<div class="card">
+<h3>Marathon Coaching</h3>
+<p>Custom workout plans for Marathon races.</p>
+</div>
+
+<div class="card">
+<h3>Muscle Building</h3>
+<p>Strength training programs for muscle growth.</p>
+</div>
+
+<div class="card">
+<h3>Online Coaching</h3>
+<p>Weekly check-ins & full support.</p>
+</div>
+
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+<h2>Client Transformations</h2>
+
+<div class="testimonial">
+<p>"Under this coaching, my performance improved tremendously. With the right training plan and constant motivation, I was able to secure a podium finish in my competitions. It is truly a game-changing experience!"</p>
+<strong>- Sumit More</strong>
+</div>
+
+<div class="testimonial">
+<p>"Working with this coach completely changed my mindset and routine. The guidance was clear, practical, and easy to follow. I have seen real improvement in just a few months!"</p>
+<strong>- Rahul Bhushan</strong>
+</div>
+
+<div class="testimonial">
+<p>"Professional, supportive, and result-driven. The step-by-step plan helped me stay focused and disciplined."</p>
+<strong>- Shrey Khandekar</strong>
+</div>
+
+<div class="testimonial">
+<p>"Coach Krunal curates great workouts for the team but also caters to individual needs. He is a great guide, and makes sure everyone in the team pushes themselves to new heights."</p>
+<strong>- Rucha Kalekar</strong>
+</div>
+
+<div class="testimonial">
+<p>"Best trainer ever! Highly recommend."</p>
+<strong>- Rajesh Dasadia</strong>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact Me:</h2>
+<p><Strong>Phone:</Strong> +91 8169744596</p>
+<p><strong>Email:</strong> krunalkeluskar6@gmail.com</p>
+</section>
+
+<footer>
+<p>© 2026 Krunal Keluskar | Fitness Coaching</p>
+</footer>
+
+<script>
+    const slider = document.querySelector('.slider');
+const slides = document.querySelector('.slides');
+const images = document.querySelectorAll('.slides img');
+
+let index = 0;
+let startX = 0;
+let isDragging = false;
+
+slider.addEventListener('pointerdown', startDrag);
+slider.addEventListener('pointerup', endDrag);
+slider.addEventListener('pointerleave', endDrag);
+
+function startDrag(e) {
+  isDragging = true;
+  startX = e.clientX;
+}
+
+function endDrag(e) {
+  if (!isDragging) return;
+  isDragging = false;
+
+  let endX = e.clientX;
+  let diff = startX - endX;
+
+  if (diff > 50 && index < images.length - 1) {
+    index++;
+  }
+
+  if (diff < -50 && index > 0) {
+    index--;
+  }
+
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+
+</script>
+
+<script>
+/* Smooth Scroll */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+        .scrollIntoView({behavior:'smooth'});
+    });
+});
+</script>
+
+</body>
+</html>
+
